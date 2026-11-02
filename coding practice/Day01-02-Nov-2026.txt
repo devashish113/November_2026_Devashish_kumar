@@ -1,0 +1,14 @@
+========================================
+PathNex DevOps Practice - Day 01
+Date: 02-Nov-2026
+========================================
+
+1. Git & EC2 Setup Verification:
+   - Configured git user and email
+   - Generated ed25519 key pair
+   - Successfully authenticated: ssh -T git@github.com
+
+2. Docker & Container Test:
+   - Verified docker engine
+   - Tested sample container run: docker run ubuntu echo "Hello Pathnex"
+========================================

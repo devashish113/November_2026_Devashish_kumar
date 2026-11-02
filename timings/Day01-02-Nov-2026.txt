@@ -1,0 +1,14 @@
+----------------------------------------
+----------------------------------------
+# Date: 02-Nov-2026 (Day 01)
+# What I did today:
+# - Set up AWS EC2 instance (Ubuntu 26.04) and SSH authentication
+# - Connected GitHub with EC2 via ED25519 SSH Key
+# - Cloned personal practice repository on EC2
+# - Verified Git workflow and pushing to GitHub
+
+## Tomorrow's Task:
+# - Practice Day 02 DevOps tasks (Ansible, Docker, Shell Scripting)
+# - Follow daily branch, PR, and merge routine
+----------------------------------------
+----------------------------------------

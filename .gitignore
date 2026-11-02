@@ -1,0 +1,22 @@
+# Environment & Secrets
+.env
+*.pem
+*.key
+*.id_rsa
+*.id_ed25519
+
+# Terraform
+*.tfstate
+*.tfstate.*
+crash.log
+.terraform/
+*.tfvars
+*.tfvars.json
+
+# OS and Editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
