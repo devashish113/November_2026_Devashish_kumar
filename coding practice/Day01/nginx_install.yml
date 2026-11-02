@@ -1,0 +1,17 @@
+---
+- name: Install Nginx on Pathnex server
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install nginx package
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Ensure nginx service is running and enabled
+      service:
+        name: nginx
+        state: started
+        enabled: yes

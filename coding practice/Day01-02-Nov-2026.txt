@@ -3,12 +3,51 @@ PathNex DevOps Practice - Day 01
 Date: 02-Nov-2026
 ========================================
 
-1. Git & EC2 Setup Verification:
-   - Configured git user and email
-   - Generated ed25519 key pair
-   - Successfully authenticated: ssh -T git@github.com
+## 🔹 Task 1 — Ansible: Install Nginx on Pathnex Server
+Playbook:
+```yaml
+---
+- name: Install Nginx on Pathnex server
+  hosts: all
+  become: yes
 
-2. Docker & Container Test:
-   - Verified docker engine
-   - Tested sample container run: docker run ubuntu echo "Hello Pathnex"
+  tasks:
+    - name: Install nginx package
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Ensure nginx service is running and enabled
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+```
+
+## 🔹 Task 2 — Docker: First Container & Dockerfile
+Commands executed:
+```bash
+docker --version
+docker run ubuntu echo "Hello Pathnex"
+```
+
+Dockerfile:
+```dockerfile
+FROM ubuntu:22.04
+CMD ["echo", "Hello Pathnex"]
+```
+
+Build and run:
+```bash
+docker build -t pathnex-hello:v1 .
+docker run --rm pathnex-hello:v1
+```
+
+## 🔹 Task 3 — Shell / Git Setup
+- Git configuration:
+  git config --global user.name "devashish113"
+  git config --global user.email "devashishufraul@gmail.com"
+- SSH ED25519 key authentication verified with GitHub:
+  ssh -T git@github.com
 ========================================
