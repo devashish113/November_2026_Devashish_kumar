@@ -2,13 +2,16 @@
 ----------------------------------------
 # Date: 02-Nov-2026 (Day 01)
 # What I did today:
-# - Set up AWS EC2 instance (Ubuntu 26.04) and SSH authentication
-# - Connected GitHub with EC2 via ED25519 SSH Key
-# - Cloned personal practice repository on EC2
-# - Verified Git workflow and pushing to GitHub
+# 1 hour - Git & GitHub configuration with SSH keys (EC2 and Local)
+# 1 hour - AWS EC2 instance setup & remote repository workflow
+# 30 mins - Ansible Playbook: Nginx installation on Pathnex Server
+# 30 mins - Docker setup and writing first Pathnex Dockerfile
+# 1 hour - English speaking / interview questions practice
 
 ## Tomorrow's Task:
-# - Practice Day 02 DevOps tasks (Ansible, Docker, Shell Scripting)
-# - Follow daily branch, PR, and merge routine
+# - Day 02 DevOps tasks (Docker multi-stage builds, Ansible roles, Shell automation)
+# - 1 hour coding & scripting practice
+# - 1 hour English reading & documentation
+# - 1 hour interview question paper revision
 ----------------------------------------
 ----------------------------------------
