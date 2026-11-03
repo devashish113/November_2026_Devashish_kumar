@@ -1,0 +1,17 @@
+----------------------------------------
+----------------------------------------
+# Date: 03-Nov-2026 (Day 02)
+# What I did today:
+# 1 hour - Ansible Playbook for Nginx service management and enabling systemd
+# 1.5 hours - Terraform basic EC2 instance configuration with custom tags (r5.2xlarge)
+# 1 hour - Kubernetes Deployment manifest with 2 replicas and Nginx pod
+# 30 mins - Shell script for disk usage monitoring (df -h)
+# 30 mins - Docker image pulling and inspection commands
+# 1 hour - Spoken English practice / technical interview prep
+
+## Tomorrow's Task:
+# - Day 03 DevOps Tasks (Ansible handlers, Terraform variables, K8s Services)
+# - 1 hour coding & scripting
+# - 1 hour English reading & DevOps scenario questions
+----------------------------------------
+----------------------------------------
