@@ -1,0 +1,18 @@
+----------------------------------------
+----------------------------------------
+# Date: 04-Nov-2026 (Day 03)
+# What I did today:
+# 1 hour - Ansible Playbook for Apache (httpd) package & service automation
+# 1.5 hours - Terraform configuration for t3.medium EC2 instance provisioning
+# 1 hour - Kubernetes ReplicaSet architecture and configuring 3 replicas
+# 30 mins - Shell script to retrieve user identity and group memberships
+# 30 mins - Docker custom Nginx web server image with HTML landing page
+# 1 hour - Spoken English practice & DevOps interview scenarios
+
+## Tomorrow's Task:
+# - Day 04 DevOps tasks (Ansible variables/templates, Terraform outputs, K8s Services)
+# - 1 hour coding & scripting practice
+# - 1 hour English reading & documentation
+# - 1 hour mock interview question review
+----------------------------------------
+----------------------------------------
