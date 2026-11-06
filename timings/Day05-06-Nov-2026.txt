@@ -1,0 +1,18 @@
+----------------------------------------
+----------------------------------------
+# Date: 06-Nov-2026 (Day 05)
+# What I did today:
+# 1 hour - Jenkinsfile with Git SCM integration, automated checkout & test stages
+# 1 hour - GitLab CI pipeline with Docker build, push, and Kubernetes deployment stage
+# 1.5 hours - Ansible user management (creating pathnex user, shell & permission modes)
+# 1 hour - Terraform EC2 provisioning with custom EBS block device storage (50GB on /dev/sdh)
+# 30 mins - Dockerizing Python application with custom WORKDIR and COPY instructions
+# 1 hour - Spoken English practice & technical interview scenario questions
+
+## Tomorrow's Task:
+# - Day 06 DevOps tasks (Advanced Docker multi-stage builds, Ansible roles, Terraform modules)
+# - 1 hour coding & scripting practice
+# - 1 hour English reading & documentation
+# - 1 hour interview question revision
+----------------------------------------
+----------------------------------------
