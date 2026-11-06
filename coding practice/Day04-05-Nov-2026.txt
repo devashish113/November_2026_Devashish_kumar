@@ -1,0 +1,117 @@
+========================================
+PathNex DevOps Practice - Day 04
+Date: 05-Nov-2026
+Topic: CI/CD Pipelines (Jenkins & GitLab), Ansible Templates, Security Groups
+========================================
+
+## 🔹 Task 1 — Jenkinsfile: Basic CI Pipeline
+Declarative pipeline definition with Build, Test, and Deploy stages:
+```groovy
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building project'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application'
+            }
+        }
+    }
+}
+```
+
+## 🔹 Task 2 — GitLab CI/CD: Basic Pipeline (.gitlab-ci.yml)
+Multi-stage automated pipeline configuration:
+```yaml
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "Building project"
+
+test:
+  stage: test
+  script:
+    - echo "Running tests"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying application"
+```
+
+## 🔹 Task 3 — Ansible: Install and Configure Nginx with Jinja2 Template
+Playbook utilizing Jinja2 template (`nginx.conf.j2`) for dynamic server configuration:
+```yaml
+---
+- name: Install and configure Nginx
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install nginx
+      yum:
+        name: nginx
+        state: present
+    - name: Configure nginx
+      template:
+        src: nginx.conf.j2
+        dest: /etc/nginx/nginx.conf
+    - name: Start nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+```
+
+## 🔹 Task 4 — Terraform: EC2 Security Group
+Security group allowing inbound SSH (port 22) and HTTP (port 80) with full outbound egress:
+```hcl
+resource "aws_security_group" "example" {
+  name        = "example_security_group"
+  description = "Allow SSH and HTTP"
+
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+```
+
+## 🔹 Task 5 — Docker: Apache Container
+Custom Dockerfile for Apache web server:
+```dockerfile
+FROM ubuntu:22.04
+RUN apt update && apt install apache2 -y
+RUN echo "Hello Pathnex" > /var/www/html/index.html
+CMD ["apachectl", "-D", "FOREGROUND"]
+```
+========================================

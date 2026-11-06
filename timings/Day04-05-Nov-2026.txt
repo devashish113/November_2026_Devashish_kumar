@@ -1,0 +1,18 @@
+----------------------------------------
+----------------------------------------
+# Date: 05-Nov-2026 (Day 04)
+# What I did today:
+# 1 hour - Jenkinsfile declarative syntax & building a multi-stage CI pipeline (Build, Test, Deploy)
+# 1 hour - GitLab CI/CD pipeline configuration (.gitlab-ci.yml)
+# 1.5 hours - Ansible Jinja2 templates (nginx.conf.j2) and service automation
+# 1 hour - Terraform AWS Security Group configuration for ingress SSH/HTTP and egress
+# 30 mins - Docker custom Apache web server image and index page configuration
+# 1 hour - Spoken English practice & DevOps interview scenarios
+
+## Tomorrow's Task:
+# - Day 05 DevOps tasks (Jenkins webhooks, Terraform variables/providers, Docker Compose)
+# - 1 hour coding & scripting practice
+# - 1 hour English reading & technical documentation
+# - 1 hour mock interview question revision
+----------------------------------------
+----------------------------------------
