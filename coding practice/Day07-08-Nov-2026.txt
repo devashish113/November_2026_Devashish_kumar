@@ -1,0 +1,113 @@
+========================================
+PathNex DevOps Practice - Day 07
+Date: 08-Nov-2026
+Topic: Cloud Infrastructure Automation with Terraform & Ansible, Kubernetes ConfigMaps, Java Docker
+========================================
+
+## 🔹 Task 1 — Ansible: Setup Nginx with Custom Configuration
+Playbook to install Nginx and deploy custom `nginx.conf`:
+```yaml
+---
+- name: Setup Nginx with Custom Config
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install nginx
+      yum:
+        name: nginx
+        state: present
+
+    - name: Copy custom nginx.conf
+      copy:
+        src: nginx.conf
+        dest: /etc/nginx/nginx.conf
+
+    - name: Start nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+```
+
+## 🔹 Task 2 — Terraform: Provision EC2 with IAM Role & Instance Profile
+Creates IAM assume role for EC2 and assigns an instance profile to allow cloud resource interactions securely:
+```hcl
+resource "aws_iam_role" "ec2_role" {
+  name = "pathnex_ec2_role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      },
+    ]
+  })
+}
+
+resource "aws_iam_instance_profile" "ec2_profile" {
+  name = "pathnex_ec2_profile"
+  role = aws_iam_role.ec2_role.name
+}
+
+resource "aws_instance" "pathnex_ec2" {
+  ami                  = "ami-0abcd1234abcd1234"
+  instance_type        = "t2.medium"
+  iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
+
+  tags = {
+    Name = "Pathnex-EC2"
+  }
+}
+```
+
+## 🔹 Task 3 — Kubernetes: ConfigMap and Secret Management
+Decoupling application environment configuration and sensitive credentials:
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pathnex-config
+data:
+  app.properties: |
+    key=value
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: pathnex-secret
+type: Opaque
+data:
+  password: cGF0aG5leHBhc3M=
+```
+
+## 🔹 Task 4 — Shell Script: Archive Log Files
+Script to compress and back up server log files:
+```bash
+#!/bin/bash
+tar -czf /var/log/archived_logs.tar.gz /var/log/*.log
+```
+
+## 🔹 Task 5 — Docker: Java Application Container
+Created `Hello.java`:
+```java
+class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello Pathnex");
+    }
+}
+```
+
+Dockerfile:
+```dockerfile
+FROM openjdk:17
+WORKDIR /opt/pathnex/java-app
+COPY Hello.java /opt/pathnex/java-app/
+RUN javac /opt/pathnex/java-app/Hello.java
+CMD ["java", "-cp", "/opt/pathnex/java-app", "Hello"]
+```
+========================================

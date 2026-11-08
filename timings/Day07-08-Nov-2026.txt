@@ -1,0 +1,18 @@
+----------------------------------------
+----------------------------------------
+# Date: 08-Nov-2026 (Day 07)
+# What I did today:
+# 1 hour - Ansible Playbook to deploy custom Nginx configuration files via copy module
+# 1.5 hours - Terraform IAM Role setup (assume_role_policy for EC2) & instance profile attachment
+# 1 hour - Kubernetes ConfigMaps and Secrets management for decoupled configuration
+# 30 mins - Shell script for log rotation and compression using tar archive (/var/log/*.log)
+# 30 mins - Dockerizing Java application (openjdk:17 image, compilation with javac & execution)
+# 1 hour - Spoken English practice & weekly DevOps concepts revision
+
+## Tomorrow's Task:
+# - Day 08 DevOps tasks (Week 2 kickoff: Ansible roles, Terraform dynamic blocks, K8s Ingress)
+# - 1 hour coding & scripting practice
+# - 1 hour English reading & documentation
+# - 1 hour mock interview question revision
+----------------------------------------
+----------------------------------------
