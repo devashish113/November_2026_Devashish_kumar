@@ -1,0 +1,18 @@
+----------------------------------------
+----------------------------------------
+# Date: 07-Nov-2026 (Day 06)
+# What I did today:
+# 1 hour - Ansible Playbook to automate Docker engine installation & service enablement
+# 1.5 hours - Terraform VPC architecture and associating EC2 instance with custom subnet
+# 1 hour - Kubernetes Pod storage architecture: configuring hostPath volume mounts
+# 30 mins - Shell script for automated health check of critical system services (nginx, docker, httpd)
+# 30 mins - Dockerizing Node.js application (node:18 base image, WORKDIR & execution)
+# 1 hour - Spoken English practice & technical interview scenario discussion
+
+## Tomorrow's Task:
+# - Day 07 DevOps tasks (Weekly review, advanced Kubernetes ConfigMaps & multi-container pods)
+# - 1 hour coding & scripting practice
+# - 1 hour English reading & documentation
+# - 1 hour mock interview question revision
+----------------------------------------
+----------------------------------------
