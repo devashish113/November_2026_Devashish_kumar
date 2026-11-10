@@ -1,0 +1,19 @@
+----------------------------------------
+----------------------------------------
+# Date: 09-Nov-2026 (Day 08)
+# What I did today:
+# 1 hour - Ansible Playbook to automate python3-pip and Docker Compose installation
+# 1.5 hours - Terraform combining EC2 instance, security group (SSH/HTTP), and 30GB EBS storage
+# 1 hour - Kubernetes NodePort Service exposing application pods on static port 30007
+# 1 hour - Jenkins scripted pipeline for building and pushing container images to Docker Hub
+# 30 mins - GitLab CI/CD container registry authentication and automated push stage
+# 30 mins - Lightweight Alpine Linux containerization (FROM alpine:latest)
+# 1 hour - Spoken English practice & DevOps interview questions (Networking & K8s Services)
+
+## Tomorrow's Task:
+# - Day 09 DevOps tasks (Docker volumes & bind mounts, Terraform remote state S3, K8s Ingress)
+# - 1 hour coding & scripting practice
+# - 1 hour English reading & documentation
+# - 1 hour mock interview question revision
+----------------------------------------
+----------------------------------------
