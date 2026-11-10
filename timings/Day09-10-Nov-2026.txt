@@ -1,0 +1,19 @@
+----------------------------------------
+----------------------------------------
+# Date: 10-Nov-2026 (Day 09)
+# What I did today:
+# 1 hour - Ansible Docker modules (docker_image pull and docker_container port mapping 8080:80)
+# 1.5 hours - Terraform AWS Auto Scaling Group (ASG) and Launch Configuration setup
+# 1 hour - Kubernetes Horizontal Pod Autoscaler (HPA v2) configuring CPU threshold at 50%
+# 1 hour - Jenkins scripted pipeline for automated Kubernetes deployment using kubectl
+# 30 mins - GitLab CI/CD deploy stage targeting Kubernetes cluster manifests
+# 30 mins - Docker ENV instructions configuration (INSTITUTE & COURSE variables)
+# 1 hour - Spoken English practice & DevOps interview questions (Autoscaling & Orchestration)
+
+## Tomorrow's Task:
+# - Day 10 DevOps tasks (Kubernetes Ingress controllers, Terraform remote state S3, Docker multi-stage)
+# - 1 hour coding & scripting practice
+# - 1 hour English reading & documentation
+# - 1 hour mock interview question revision
+----------------------------------------
+----------------------------------------
